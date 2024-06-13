@@ -8,7 +8,7 @@ class GameResult:
         return self.__solved
 
     def get_strikes(self):
-        return self.__solved
+        return self.__strikes
 
     def get_balls(self):
-        return self.__solved
+        return self.__balls
