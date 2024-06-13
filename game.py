@@ -4,3 +4,11 @@ class Game:
             raise TypeError()
         if len(guessNumber) != 3:
             raise TypeError()
+        try:
+            int(guessNumber)
+        except ValueError as e:
+            raise TypeError()
+
+        if len(guessNumber) != len(set(guessNumber)):
+            raise TypeError()
+
